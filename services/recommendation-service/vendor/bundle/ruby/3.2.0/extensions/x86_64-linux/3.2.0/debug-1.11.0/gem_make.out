@@ -1,0 +1,19 @@
+current directory: /home/developer/lms-microservices/services/recommendation-service/vendor/bundle/ruby/3.2.0/gems/debug-1.11.0/ext/debug
+/home/developer/.rvm/rubies/ruby-3.2.3/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/developer/lms-microservices/services/recommendation-service/vendor/bundle/ruby/3.2.0/gems/debug-1.11.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250721-2814331-lmwbo7 sitelibdir\=./.gem.20250721-2814331-lmwbo7 clean
+
+current directory: /home/developer/lms-microservices/services/recommendation-service/vendor/bundle/ruby/3.2.0/gems/debug-1.11.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250721-2814331-lmwbo7 sitelibdir\=./.gem.20250721-2814331-lmwbo7
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/developer/lms-microservices/services/recommendation-service/vendor/bundle/ruby/3.2.0/gems/debug-1.11.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250721-2814331-lmwbo7 sitelibdir\=./.gem.20250721-2814331-lmwbo7 install
+/usr/bin/install -m 0755 debug.so ./.gem.20250721-2814331-lmwbo7/debug
+
+current directory: /home/developer/lms-microservices/services/recommendation-service/vendor/bundle/ruby/3.2.0/gems/debug-1.11.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250721-2814331-lmwbo7 sitelibdir\=./.gem.20250721-2814331-lmwbo7 clean

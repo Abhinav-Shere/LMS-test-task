@@ -1,0 +1,18 @@
+current directory: /home/developer/lms-microservices/services/recommendation-service/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+/home/developer/.rvm/rubies/ruby-3.2.3/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/developer/lms-microservices/services/recommendation-service/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250721-2814331-hwd72c sitelibdir\=./.gem.20250721-2814331-hwd72c clean
+
+current directory: /home/developer/lms-microservices/services/recommendation-service/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250721-2814331-hwd72c sitelibdir\=./.gem.20250721-2814331-hwd72c
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: /home/developer/lms-microservices/services/recommendation-service/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250721-2814331-hwd72c sitelibdir\=./.gem.20250721-2814331-hwd72c install
+/usr/bin/install -m 0755 cparse.so ./.gem.20250721-2814331-hwd72c/racc
+
+current directory: /home/developer/lms-microservices/services/recommendation-service/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250721-2814331-hwd72c sitelibdir\=./.gem.20250721-2814331-hwd72c clean

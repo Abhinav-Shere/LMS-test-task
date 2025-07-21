@@ -1,0 +1,19 @@
+current directory: /home/developer/lms-microservices/services/recommendation-service/vendor/bundle/ruby/3.2.0/gems/erb-5.0.2/ext/erb/escape
+/home/developer/.rvm/rubies/ruby-3.2.3/bin/ruby extconf.rb
+checking for rb_ext_ractor_safe() in ruby.h... yes
+creating Makefile
+
+current directory: /home/developer/lms-microservices/services/recommendation-service/vendor/bundle/ruby/3.2.0/gems/erb-5.0.2/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20250721-2814331-t7j39s sitelibdir\=./.gem.20250721-2814331-t7j39s clean
+
+current directory: /home/developer/lms-microservices/services/recommendation-service/vendor/bundle/ruby/3.2.0/gems/erb-5.0.2/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20250721-2814331-t7j39s sitelibdir\=./.gem.20250721-2814331-t7j39s
+compiling escape.c
+linking shared-object erb/escape.so
+
+current directory: /home/developer/lms-microservices/services/recommendation-service/vendor/bundle/ruby/3.2.0/gems/erb-5.0.2/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20250721-2814331-t7j39s sitelibdir\=./.gem.20250721-2814331-t7j39s install
+/usr/bin/install -m 0755 escape.so ./.gem.20250721-2814331-t7j39s/erb
+
+current directory: /home/developer/lms-microservices/services/recommendation-service/vendor/bundle/ruby/3.2.0/gems/erb-5.0.2/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20250721-2814331-t7j39s sitelibdir\=./.gem.20250721-2814331-t7j39s clean

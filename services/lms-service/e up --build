@@ -1,0 +1,21 @@
+[0;1;32m●[0m docker.service - Docker Application Container Engine
+     Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Tue 2025-07-15 14:59:45 IST; 3 days ago
+TriggeredBy: [0;1;32m●[0m docker.socket
+       Docs: https://docs.docker.com
+   Main PID: 1473 (dockerd)
+      Tasks: 20
+     Memory: 116.8M
+     CGroup: /system.slice/docker.service
+             └─1473 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+
+Jul 15 14:59:43 developer dockerd[1473]: time="2025-07-15T14:59:43.913724116+05:30" level=info msg="Starting up"
+Jul 15 14:59:43 developer dockerd[1473]: time="2025-07-15T14:59:43.918410068+05:30" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Jul 15 14:59:44 developer dockerd[1473]: time="2025-07-15T14:59:44.158233991+05:30" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Jul 15 14:59:44 developer dockerd[1473]: time="2025-07-15T14:59:44.556625495+05:30" level=info msg="Loading containers: start."
+Jul 15 14:59:44 developer dockerd[1473]: time="2025-07-15T14:59:44.996711878+05:30" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+Jul 15 14:59:45 developer dockerd[1473]: time="2025-07-15T14:59:45.040084676+05:30" level=info msg="Loading containers: done."
+Jul 15 14:59:45 developer dockerd[1473]: time="2025-07-15T14:59:45.088714456+05:30" level=info msg="Docker daemon" commit=c8af8eb containerd-snapshotter=false storage-driver=overlay2 version=26.1.0
+Jul 15 14:59:45 developer dockerd[1473]: time="2025-07-15T14:59:45.088971574+05:30" level=info msg="Daemon has completed initialization"
+Jul 15 14:59:45 developer systemd[1]: Started Docker Application Container Engine.
+Jul 15 14:59:45 developer dockerd[1473]: time="2025-07-15T14:59:45.546696201+05:30" level=info msg="API listen on /run/docker.sock"

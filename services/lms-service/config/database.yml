@@ -1,0 +1,39 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: <%= ENV.fetch("DATABASE_USER", "developer") %>
+  password: <%= ENV.fetch("DATABASE_PASSWORD", "developer") %>
+  host: <%= ENV.fetch("DATABASE_HOST", "db") %>
+  port: <%= ENV.fetch("DATABASE_PORT", 5432) %>
+
+development:
+  <<: *default
+  database: <%= ENV.fetch("DATABASE_NAME", "lms_development") %>
+
+test:
+  <<: *default
+  database: <%= ENV.fetch("DATABASE_NAME", "lms_test") %>
+
+production:
+  primary: &primary_production
+    <<: *default
+    database: <%= ENV.fetch("DATABASE_NAME", "lms_service_production") %>
+    username: <%= ENV.fetch("DATABASE_USER", "lms_service") %>
+    password: <%= ENV.fetch("LMS_SERVICE_DATABASE_PASSWORD", "postgres") %>
+    host: <%= ENV.fetch("DATABASE_HOST", "db") %>
+
+  cache:
+    <<: *primary_production
+    database: lms_service_production_cache
+    migrations_paths: db/cache_migrate
+
+  queue:
+    <<: *primary_production
+    database: lms_service_production_queue
+    migrations_paths: db/queue_migrate
+
+  cable:
+    <<: *primary_production
+    database: lms_service_production_cable
+    migrations_paths: db/cable_migrate

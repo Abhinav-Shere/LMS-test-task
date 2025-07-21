@@ -1,0 +1,54 @@
+version: '3.9'
+
+services:
+  db:
+    image: postgres:15
+    container_name: lms_postgres
+    environment:
+      POSTGRES_USER: developer
+      POSTGRES_PASSWORD: developer
+      POSTGRES_DB: lms_development
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  lms-service:
+    build: ./services/lms-service
+    container_name: lms_service
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -b 0.0.0.0 -p 3000"
+    volumes:
+      - ./services/lms-service:/app
+    working_dir: /app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    environment:
+      RAILS_ENV: development
+      DATABASE_HOST: lms_postgres
+      DATABASE_USER: developer
+      DATABASE_PASSWORD: developer
+      DATABASE_NAME: lms_development
+
+  recommendation-service:
+    build: ./services/recommendation-service
+    container_name: recommendation_service
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -b 0.0.0.0 -p 3000"
+    volumes:
+      - ./services/recommendation-service:/app
+    working_dir: /app
+    ports:
+      - "3001:3000"
+    depends_on:
+      - db
+    environment:
+      RAILS_ENV: development
+      DATABASE_HOST: lms_postgres
+      DATABASE_USER: developer
+      DATABASE_PASSWORD: developer
+      DATABASE_NAME: reco_development
+
+volumes:
+  db_data: {}
+
